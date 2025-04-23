@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+</head>
+<body>
+    <a id="top"></a>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="1.jpg" alt="">
+                <h1>Mercedes-benz</h1>
+            </div>
+            
+            <nav class="menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger">☰</label>
+                <ul class="menu-list">
+                    <li><a href="#onas" class="menu-item">О нас</a></li>
+                    <li><a href="#zap" class="menu-item">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="contacts">
+                <div class="phone">Тел. 8-900-000-00-00</div>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container banner-content">
+            <div class="banner-text">
+                <h2>Хотите провести тест-драйв?</h2>
+                <div class="buttons">
+                    <a href="#zap" class="btn btn-primary">Записаться</a>
+                    <a href="#onas" class="btn btn-secondary">О нас</a>
+                </div>
+            </div>
+            
+            <div class="banner-images">
+                <img src="4.png" alt="" class="banner-img img1">
+                <img src="3.png" alt="" class="banner-img img2">
+            </div>
+        </div>
+    </section>
+    
+    <main class="container">
+        <section>
+            <div class="section-title">
+                <h2>Популярные у нас</h2>
+            </div>           
+            <div class="features">
+                <div class="feature">
+                    <img src="5.png" alt="">
+                    <h3>Mercedes-AMG GT 63 S E Performance</h3>
+                    <p>Битурбомотор V8 4.0 работает в тандеме с электродвигателем на задней оси, 843 л. с. и 1470 Н•м, набирает 100 км/ч с места за 2,9 с, развивает максимальную скорость 316 км/ч.</p>
+                </div>
+                
+                <div class="feature">
+                    <img src="6.png" alt="">
+                    <h3>Mercedes-Benz E-Class</h3>
+                    <p>Автомобиль бизнес-класса, который имеет множество модификаций: седаны, универсалы, купе, кабриолеты и даже шестидверные лимузины.</p>
+                </div>
+                
+                <div class="feature">
+                    <img src="7.png" alt="">
+                    <h3>Mercedes-Benz AMG GT</h3>
+                    <p>Двухместный спортивный автомобиль, созданный подразделением Mercedes-AMG. Модель сочетает в себе мощный характер, инновационные технологии и роскошный дизайн. Оснащается двумя мощными бензиновыми двигателями, 7-ступенчатой автоматической коробкой передач, задним приводом. Максимальная скорость — 315 км/ч. </p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="section-title">
+                <h2 id = onas>О нас</h2>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <img src="9.png" alt="">
+                </div>
+                
+                <div class="feature">
+                    <h3>Немного истории...</h3>
+                    <p>В 2010 году в Саратове открылся официальный дилерский центр Mercedes-Benz. Современный автосалон представил полный модельный ряд, сервис и программы финансирования, став ключевым поставщиком премиальных автомобилей в регионе. Сегодня он сохраняет лидерство, сочетая немецкое качество с высоким уровнем обслуживания.</p>
+                </div>
+                
+                <div class="feature">
+                    <img src="8.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="section-title">
+                <h2>Не нашли что искали?</h2>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>Не проблема!</h3>
+                    <p>Вы можете оставить предзаказ, и мы привезем Вам нужное авто из любой точки мира!</p>
+                </div>
+                
+                <div class="feature">
+                    <img src="10.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="section-title">
+                <h2>Так же</h2>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <img src="11.png" alt="">
+                </div>
+                
+                <div class="feature">
+                    <h3>Mensory и Brabus</h3>
+                    <p>Так же у нас можно приобрести модели в обвесе Brabus и Mensory.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Форма обратной связи</h3>
+                    <form id = zap class="contact-form">
+                        <input type="text" class="text-input" placeholder="Ваше имя" pattern="^[А-Яа-яЁё]{1,1000}" required
+                        oninvalid="setCustomValidity('Имя должно содержать 1-1000 символов и только на русском языке ')"
+                        oninput="setCustomValidity('')" required>
+                        <input type="email" class="text-input" placeholder="Ваш email" pattern="^[А-Яа-яЁё]{1,1000}" required
+                        oninvalid="setCustomValidity('E-mail должен содержать 1-1000 символов и только на английском языке ')"
+                        oninput="setCustomValidity('')" required>
+                        <input type="tel" class="text-input" placeholder="Ваш телефон">
+                        <textarea class="text-input" placeholder="Ваше сообщение"></textarea>
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <div class="contact-info" id = con>
+                        <p><i class="fas fa-map-marker-alt"></i> Адрес: г. Саратов, ул. имени А.П. Шехурдина, 2/4</p>
+                        <p><i class="fas fa-phone"></i> Телефон: 8-900-000-00-00</p>
+                        <p><i class="fas fa-envelope"></i> Email: okey1111@vk.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Карта</h3>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.073144693877!2d45.997362476986474!3d51.566892606354905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4114c61f4ef7f8b1%3A0x5df94b5d7c587ef8!2z0YPQuy4g0KjQtdGF0YPRgNC00LjQvdCwLCAyLzQsINCh0LDRgNCw0YLQvtCyLCDQodCw0YDQsNGC0L7QstGB0LrQsNGPINC-0LHQuy4sIDQxMDAxMA!5e0!3m2!1sru!2sru!4v1743842088375!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <a href="#top" class="scroll-top" aria-label="Наверх">↑</a>
+</body>
+</html>
